@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_AlamofireAndSwiftyJSON_AlamofireAndSwiftyJSONUITests : NSObject
+@end
+@implementation PodsDummy_Pods_AlamofireAndSwiftyJSON_AlamofireAndSwiftyJSONUITests
+@end
