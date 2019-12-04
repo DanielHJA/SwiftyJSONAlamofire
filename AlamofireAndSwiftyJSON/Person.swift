@@ -29,6 +29,8 @@ struct Person: Objectifiable {
     
 }
 
+// MARK: - SwiftyJSON Init
+
 extension Person {
     
     init?(json: JSON) {
@@ -45,16 +47,4 @@ extension Person {
         self.hobbies = hobbies
     }
     
-}
-
-extension Objectifiable {
-    static func arrayFromJSON(_ json: JSON) -> [Self] {
-        var result = [Self]()
-        for (_, item) in json {
-            if let item = Self(json: item) {
-                result.append(item)
-            }
-        }
-        return result
-    }
 }

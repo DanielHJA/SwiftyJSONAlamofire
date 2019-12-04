@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 extension BaseView {
     
@@ -21,4 +22,16 @@ extension BaseView {
         return bundle.loadNibNamed(String(describing: self), owner: self, options: nil)![0] as! Self
     }
     
+}
+
+extension Objectifiable {
+    static func arrayFromJSON(_ json: JSON) -> [Self] {
+        var result = [Self]()
+        for (_, item) in json {
+            if let item = Self(json: item) {
+                result.append(item)
+            }
+        }
+        return result
+    }
 }
