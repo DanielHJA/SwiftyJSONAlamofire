@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         WebService.fetch(urlString: url) { [weak self] result in
             switch result {
             case .success(let json):
-                let people = Person.array(json: json)
+                let people = Person.arrayFromJSON(json) 
                 
                 for person in people {
                     let view = PersonView.makeView(person: person)

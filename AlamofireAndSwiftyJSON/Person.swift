@@ -9,7 +9,11 @@
 import UIKit
 import SwiftyJSON
 
-struct Person {
+protocol Objectifiable {
+    init?(json: JSON)
+}
+
+struct Person: Objectifiable {
     
     var id: String?
     var name: String!
@@ -38,12 +42,12 @@ extension Person {
     
 }
 
-extension Person {
-    static func array(json: JSON) -> [Person] {
-        var result = [Person]()
+extension Objectifiable {
+    static func arrayFromJSON(_ json: JSON) -> [Self] {
+        var result = [Self]()
         for (_, item) in json {
-            if let person = Person(json: item) {
-                result.append(person)
+            if let item = Self(json: item) {
+                result.append(item)
             }
         }
         return result
