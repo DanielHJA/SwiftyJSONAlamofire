@@ -8,18 +8,17 @@
 
 import UIKit
 
-extension UIView {
+extension BaseView {
+    
+    static func makeView(object: Objectifiable) -> Self {
+        let view = Self.loadNib()
+        view.object = object as? T 
+        return view
+    }
+    
     static func loadNib() -> Self {
         let bundle = Bundle.main
         return bundle.loadNibNamed(String(describing: self), owner: self, options: nil)![0] as! Self
     }
-}
-
-extension PersonView {
-    static func makeView(person: Person) -> Self {
-        let view = Self.loadNib()
-        view.header = person.name
-        view.value = person.headline
-        return view
-    }
+    
 }

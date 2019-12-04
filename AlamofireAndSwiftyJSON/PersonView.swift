@@ -8,7 +8,14 @@
 
 import UIKit
 
-class PersonView: UIView {
+class PersonView: BaseView<Person> {
+    
+    override var object: Person? {
+        didSet {
+            headerLabel.text = object?.headline
+            valueLabel.text = object?.name
+        }
+    }
 
     @IBOutlet weak var headerLabel: UILabel! {
         didSet {
@@ -19,18 +26,6 @@ class PersonView: UIView {
     @IBOutlet weak var valueLabel: UILabel! {
         didSet {
             headerLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
-        }
-    }
-    
-    var header: String = "" {
-        didSet {
-            headerLabel.text = header
-        }
-    }
-    
-    var value: String = "" {
-        didSet {
-            valueLabel.text = value
         }
     }
     

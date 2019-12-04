@@ -30,10 +30,10 @@ class ViewController: UIViewController {
         WebService.fetch(urlString: url) { [weak self] result in
             switch result {
             case .success(let json):
-                let people = Person.arrayFromJSON(json) 
+                let people = Person.arrayFromJSON(json)
                 
                 for person in people {
-                    let view = PersonView.makeView(person: person)
+                    let view = PersonView.makeView(object: person)
                     self?.personViews.append(view)
                     self?.verticalView.stackView.addArrangedSubview(view)
                 }

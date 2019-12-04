@@ -1,17 +1,17 @@
 //
-//  VerticalView.swift
+//  BaseView.swift
 //  AlamofireAndSwiftyJSON
 //
-//  Created by Daniel Hjärtström on 2019-12-03.
+//  Created by Daniel Hjärtström on 2019-12-04.
 //  Copyright © 2019 Daniel Hjärtström. All rights reserved.
 //
 
 import UIKit
 
-class VerticalView: BaseView<AnyObjectifiable> {
-
-    @IBOutlet weak var stackView: UIStackView!
+class BaseView<T: Objectifiable>: UIView {
     
+    var object: T?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -31,8 +31,6 @@ class VerticalView: BaseView<AnyObjectifiable> {
         
     }
     
-    private func commonInit() {
-        
-    }
-
+    private func commonInit() {}
+    
 }

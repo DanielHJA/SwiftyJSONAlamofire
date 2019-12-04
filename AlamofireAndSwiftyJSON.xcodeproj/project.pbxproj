@@ -24,6 +24,8 @@
 		7B7DE13623965F2300813F6D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DE13523965F2300813F6D /* Person.swift */; };
 		7B7DE138239665BC00813F6D /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B7DE137239665BC00813F6D /* PersonView.xib */; };
 		7B7DE13A2396675000813F6D /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7DE1392396675000813F6D /* PersonView.swift */; };
+		7BAA4AF92397A0DC0066044E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA4AF82397A0DC0066044E /* BaseView.swift */; };
+		7BAA4AFB2397A3290066044E /* AnyObjectifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA4AFA2397A3290066044E /* AnyObjectifiable.swift */; };
 		D4E131ED4F69C630E1DAF791 /* Pods_AlamofireAndSwiftyJSON_AlamofireAndSwiftyJSONUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636C68702EB5052FD1122C2D /* Pods_AlamofireAndSwiftyJSON_AlamofireAndSwiftyJSONUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		7B7DE13523965F2300813F6D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7B7DE137239665BC00813F6D /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		7B7DE1392396675000813F6D /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		7BAA4AF82397A0DC0066044E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7BAA4AFA2397A3290066044E /* AnyObjectifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyObjectifiable.swift; sourceTree = "<group>"; };
 		CA65EC5DF74A54BA6976EAC5 /* Pods-AlamofireAndSwiftyJSONTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireAndSwiftyJSONTests.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireAndSwiftyJSONTests/Pods-AlamofireAndSwiftyJSONTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3C639FB558F2597ED379E37 /* Pods-AlamofireAndSwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireAndSwiftyJSON.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireAndSwiftyJSON/Pods-AlamofireAndSwiftyJSON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +151,9 @@
 				7B1EE3D723966B3300CECB61 /* VerticalView.xib */,
 				7B7DE137239665BC00813F6D /* PersonView.xib */,
 				7B1EE3D32396681D00CECB61 /* Extensions.swift */,
+				7BAA4AFA2397A3290066044E /* AnyObjectifiable.swift */,
 				7B7DE1392396675000813F6D /* PersonView.swift */,
+				7BAA4AF82397A0DC0066044E /* BaseView.swift */,
 				7B7DE10923965E9500813F6D /* Main.storyboard */,
 				7B7DE10C23965E9600813F6D /* Assets.xcassets */,
 				7B7DE10E23965E9600813F6D /* LaunchScreen.storyboard */,
@@ -434,8 +440,10 @@
 				7B7DE10823965E9500813F6D /* ViewController.swift in Sources */,
 				7B1EE3D623966B2600CECB61 /* VerticalView.swift in Sources */,
 				7B7DE10423965E9500813F6D /* AppDelegate.swift in Sources */,
+				7BAA4AFB2397A3290066044E /* AnyObjectifiable.swift in Sources */,
 				7B7DE13A2396675000813F6D /* PersonView.swift in Sources */,
 				7B7DE13423965EDF00813F6D /* WebService.swift in Sources */,
+				7BAA4AF92397A0DC0066044E /* BaseView.swift in Sources */,
 				7B7DE10623965E9500813F6D /* SceneDelegate.swift in Sources */,
 				7B1EE3D42396681D00CECB61 /* Extensions.swift in Sources */,
 			);
