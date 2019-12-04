@@ -13,6 +13,12 @@ protocol Objectifiable {
     init?(json: JSON)
 }
 
+extension Objectifiable {
+    init?(json: JSON) {
+        self.init(json: json)
+    }
+}
+
 struct Person: Objectifiable {
     
     var id: String?
@@ -37,7 +43,6 @@ extension Person {
         self.headline = headline
         self.age = age
         self.hobbies = hobbies
-        
     }
     
 }

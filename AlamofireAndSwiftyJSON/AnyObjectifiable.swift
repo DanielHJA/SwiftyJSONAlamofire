@@ -9,7 +9,4 @@
 import UIKit
 import SwiftyJSON
 
-class AnyObjectifiable: Objectifiable {
-    required init?(json: JSON) {
-    }
-}
+class AnyObjectifiable: Objectifiable {}

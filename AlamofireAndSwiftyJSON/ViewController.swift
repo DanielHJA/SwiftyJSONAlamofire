@@ -25,7 +25,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let url = "http://demo6427581.mockable.io/"
         WebService.fetch(urlString: url) { [weak self] result in
             switch result {
